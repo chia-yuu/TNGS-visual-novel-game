@@ -1,0 +1,34 @@
+# 小情侶
+[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/抽卡.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/南女 高二教室.png" fade="0.5"]
+在經過幾個月跟同學開心玩樂，以及準備考試、社團宣傳片、動態展、友聚等活動的時光之後，二年級一眨眼就到了尾聲
+除了準備學校段考之外，大家也陸陸續續開始準備學測了
+在這段期間，{班對1}和{班對2}的感情也逐漸升溫，直接閃瞎班上一群人的眼睛
+不過隨著段考接近，小考越來越多，加上要一邊複習學測的東西，{班對2}實在有些手忙腳亂，考試成績也越來越差
+{班對2}下定決心想跟{班對1}求助讀書的方法，於是約了她吃飯
+[background arg="res://素材/back ground/餐廳.webp" fade="0.0"]
+join 班對1 1
+班對1: 謝啦，怎麼突然來外面吃飯啊，平常不都在學校附近吃嗎
+leave 班對1
+join 班對2 1
+班對2: 沒有啦，就想說偶爾也可以出來吃嘛
+leave 班對2
+join 班對1 1
+班對1: 好啦，別說這些有的沒的，話說你段考準備得怎麼樣了，我看你最近小考都有點失常耶，還好嗎
+leave 班對1
+join 班對2 1
+班對2: 嗯...
+leave 班對2
+join 班對1 1
+班對1: 嗯？
+leave 班對1
+join 班對2 1
+班對2: 齁油，就考得有點爛啦嗚嗚，又要讀進度又要複習，根本兩邊都顧不來啊
+班對2: 你要不要當我的家教，我真的很想把學測和段考都考好
+leave 班對2
+- 當一下家教好了
+	set {is_first_time} = false
+	jump timeline10/
+- 算了還是專心讀書，考完學測再說 [if {is_first_time} == false][else="hide"]
+	jump timeline9/

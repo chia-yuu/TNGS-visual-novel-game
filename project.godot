@@ -1,0 +1,121 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="visual novel game"
+run/main_scene="res://node_2d.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
+
+[autoload]
+
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+
+[dialogic]
+
+directories/dch_directory={
+"315 張念謠": "res://timelines/character/315 張念謠.dch",
+"315 正與凡爾賽": "res://timelines/character/315 正與凡爾賽.dch",
+"佳佳": "res://timelines/character/佳佳.dch",
+"公關 陳品絜": "res://timelines/character/公關 陳品絜.dch",
+"吳沛諭": "res://timelines/character/吳沛諭.dch",
+"大笨鳥": "res://timelines/character/大笨鳥.dch",
+"媽媽": "res://timelines/character/媽媽.dch",
+"戲教 陳沛倢": "res://timelines/character/戲教 陳沛倢.dch",
+"江採柔": "res://timelines/character/江採柔.dch",
+"班對1": "res://timelines/character/班對1.dch",
+"班對2": "res://timelines/character/班對2.dch",
+"畢業花束": "res://timelines/character/畢業花束.dch",
+"社長 陳韋臻": "res://timelines/character/社長 陳韋臻.dch",
+"網管 吳心彤": "res://timelines/character/網管 吳心彤.dch",
+"老師": "res://timelines/character/老師.dch",
+"蛋糕": "res://timelines/character/蛋糕.dch",
+"路人乙": "res://timelines/character/路人乙.dch",
+"路人甲": "res://timelines/character/路人甲.dch",
+"陳俊佑": "res://timelines/character/陳俊佑.dch"
+}
+directories/dtl_directory={
+"test": "res://timelines/timelines/test.dtl",
+"timeline1": "res://timelines/timelines/timeline1.dtl",
+"timeline10": "res://timelines/timelines/timeline10.dtl",
+"timeline11": "res://timelines/timelines/timeline11.dtl",
+"timeline12": "res://timelines/timelines/timeline12.dtl",
+"timeline13": "res://timelines/timelines/timeline13.dtl",
+"timeline14": "res://timelines/timelines/timeline14.dtl",
+"timeline2": "res://timelines/timelines/timeline2.dtl",
+"timeline3": "res://timelines/timelines/timeline3.dtl",
+"timeline4": "res://timelines/timelines/timeline4.dtl",
+"timeline5": "res://timelines/timelines/timeline5.dtl",
+"timeline6": "res://timelines/timelines/timeline6.dtl",
+"timeline7": "res://timelines/timelines/timeline7.dtl",
+"timeline8": "res://timelines/timelines/timeline8.dtl",
+"timeline9": "res://timelines/timelines/timeline9.dtl"
+}
+variables={
+"cnt": 1,
+"is_first_time": true,
+"tmp": "",
+"主控": "佩玉",
+"午餐": "食王的粥",
+"學校": "成大",
+"幹啥": "出去玩",
+"班對1": "於真",
+"班對2": "與庭",
+"科系": "建築"
+}
+layout/style_list=["res://style.tres"]
+layout/default_style="res://style.tres"
+glossary/default_case_sensitive=true
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+animations/cross_fade_default_wait=true
+choices/autofocus_first=false
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}

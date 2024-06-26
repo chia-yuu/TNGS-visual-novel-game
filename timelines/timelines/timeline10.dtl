@@ -1,0 +1,103 @@
+# 小情侶 當家教
+[clear time="0.5" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/抽卡.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/家.jpg" fade="0.0"]
+在某次家教課上...
+join 班對1 1
+班對1: ...你這邊寫錯了，是生生減反生、反燃減生燃，還有這題...
+leave 班對1
+join 班對2 1
+班對2: （一副欲哭無淚的表情）
+leave 班對2
+join 班對1 1
+班對1: 算了先休息一下，我看妳也累了，我去買個飲料
+leave 班對1
+join 班對2 1
+班對2: 等我 我也要去！
+leave 班對2
+[background arg="res://素材/back ground/餐廳.webp" fade="0.0"]
+join 班對1 1
+班對1: 你好，我要一杯...
+leave 班對1
+join 班對2 1
+班對2: 一杯冬瓜青茶微糖微冰，一杯柚香覺醒307微糖微冰
+leave 班對2
+join 路人乙 1
+路人乙: 好的，馬上來
+leave 路人乙
+...
+join 路人乙 1
+路人乙: 兩杯飲料好囉
+leave 路人乙
+（{班對2}先搶飲料）
+join 班對2 1
+班對2: 你想要拿到飲料嗎，要的話先來玩個小遊戲
+leave 班對2
+label 小遊戲
+- 陪她玩
+	jump 陪她玩
+- @#$X專心讀書啦，玩什麼遊戲
+	jump 不玩
+label 不玩
+join 班對2 1
+班對2: 嘤嘤嘤你好兇喔QQ
+leave 班對2
+{班對2}哭了，怎麼可以讓人家哭
+bad end...
+- 返回上一個選項
+	jump 小遊戲
+label 陪她玩
+join 班對2 1
+班對2: 那猜猜看我要說什麼吧！
+leave 班對2
+（嘴型）（我喜歡你）
+- 我是爛泥
+	set {cnt} += 1
+	jump 是爛泥
+- 我喜歡你
+	set {cnt} += 1
+	jump 喜歡你
+- 我猜不到
+	set {cnt} += 1
+	jump 猜不到
+- 回到更之前的選項 [if {cnt} >3][else="hide"]
+	jump timeline8/
+label 是爛泥
+join 班對2 1
+班對2: 不對
+班對2: （湊近）是我喜歡你
+（親下去）
+leave 班對2
+但是{班對2}和{班對1}顧著交往，導致{班對1}學測爆炸，Boom，分手了
+bad end...
+- 回到上一個選項
+	jump 陪她玩
+label 喜歡你
+join 班對2 1
+班對2: YA！你猜對了，飲料給你
+leave 班對2
+join 班對1 1
+班對1: 我喜歡你
+leave 班對1
+join 班對2 1
+班對2: {班對1}...遊戲結束ㄌ
+leave 班對2
+join 班對1 1
+班對1: 嗯我知道，我喜歡你
+leave 班對1
+（{班對2}開心到哭出來）
+但是{班對2}和{班對1}顧著交往，導致{班對1}學測爆炸，Boom，分手了
+bad end...
+- 回到上一個選項
+	jump 陪她玩
+label 猜不到
+join 班對2 1
+班對2: （一臉難過）好吧，既然你猜不到，那我飲料也不給你了（鬼臉）
+leave 班對2
+join 班對1 1
+班對1: 欸我的飲料還來啊
+leave 班對1
+怎麼可以不陪{班對2}玩呢？
+bad end...
+- 回到上一個選項
+	jump 陪她玩

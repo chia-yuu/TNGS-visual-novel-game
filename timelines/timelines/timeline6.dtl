@@ -1,0 +1,61 @@
+# 二年級 班上小情侶
+[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/抽卡.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/南女 排球場.png" fade="0.0"]
+排球場上，大家正在為了之後的班際球賽練習，{主控}剛打完一局，現在坐在一旁休息
+join 吳沛諭 (normal) 1
+吳沛諭: 欸欸{班對1}，我上次去跟我們社師開會的時候，看到你跟{班對2}在吃飯耶，你們到底是什麼關係啊？
+leave 吳沛諭
+join 班對1 1
+班對1: 什麼什麼關係，就普通朋友啊，剛好有空約出來吃飯
+leave 班對1
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 「普通朋友」喔，聽你在騙
+leave "315 正與凡爾賽"
+join 吳沛諭 (normal) 1
+吳沛諭: 對啊，你是不是對她有意思啊，看你吃飯的時候聊天聊得很主動欸
+leave 吳沛諭
+join 班對1 1
+班對1: 就沒什麼喔，不要再亂講了，我要回去打球了掰
+leave 班對1
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 欸不要隨便就轉移話題好不好，這招超爛，不然你說一下你覺得她怎麼樣，不要跑
+leave "315 正與凡爾賽"
+- 沒什麼就朋友而已
+	jump 朋友
+- 還滿可愛的吧
+	jump 可愛
+- 一見鍾情可以了吧
+	jump 一見鍾情
+label 朋友
+join 班對1 1
+班對1: 沒什麼就朋友而已
+leave 班對1
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 嘖，真無聊
+leave "315 正與凡爾賽"
+jump 結尾
+label 可愛
+join 班對1 1
+班對1: 還滿可愛的吧
+leave 班對1
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 噢嗚嗚嗚，好可愛喔，害羞什麼啦，期待你們的好消息喔^^
+leave "315 正與凡爾賽"
+jump 結尾
+label 一見鍾情
+join 班對1 1
+班對1: 一見鍾情可以了吧
+leave 班對1
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 唉呦，一見鍾情喔，還臉紅耶，哈哈哈哈
+leave "315 正與凡爾賽"
+jump 結尾
+label 結尾
+join 班對1 1
+班對1: 好了啦別吵了，我要回去打球了
+leave 班對1
+join 吳沛諭 (normal) 1
+吳沛諭: 掰
+leave 吳沛諭
+jump timeline7/

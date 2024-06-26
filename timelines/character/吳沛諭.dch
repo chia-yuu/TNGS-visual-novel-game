@@ -1,0 +1,47 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "normal",
+"description": "",
+"display_name": "{主控}",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"normal": {
+"export_overrides": {
+"image": "\"res://素材/charactor/沛 - 正常.png\""
+},
+"mirror": false,
+"offset": Vector2(300, -450),
+"scale": 0.7,
+"scene": ""
+},
+"吹風": {
+"export_overrides": {
+"image": "\"res://素材/charactor/沛 - 吹風.png\""
+},
+"mirror": false,
+"offset": Vector2(200, -450),
+"scale": 0.53,
+"scene": ""
+},
+"沒眼看": {
+"export_overrides": {
+"image": "\"res://素材/charactor/沛 - 沒眼看.png\""
+},
+"mirror": false,
+"offset": Vector2(250, -480),
+"scale": 0.55,
+"scene": ""
+}
+},
+"scale": 1.0
+}

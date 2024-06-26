@@ -1,0 +1,62 @@
+# 社團慶生
+[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/夢想啟航.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/南女 排球場.png" fade="0.0"]
+join "315 正與凡爾賽" 1
+"315 正與凡爾賽": 對了{主控}，你們媒傳最近在忙什麼啊，看你們好像一下課就都不見了
+leave "315 正與凡爾賽"
+join 吳沛諭 (normal) 1
+吳沛諭: 在弄五臟囉，然後這屆學妹問題超多，傻眼，怎麼一件小事也處理不好
+leave 吳沛諭
+（手機通知）新桐：{主控}你等一下放學有空嗎，可不可以來一下社辦QQ 我們遇到了一點小trouble
+join 吳沛諭 (normal) 1
+吳沛諭: 唉你看，就簡簡單單做個道具也可以問題那麼多，我真是服了
+leave 吳沛諭
+...
+[background arg="res://素材/back ground/南女 高二教室.png" fade="0.0"]
+join 吳沛諭 (normal) 1
+吳沛諭: 我來啦！怎麼了？哪裡有問題嗎
+join 蛋糕 1 [animation="Bounce In Out"]
+leave 吳沛諭
+leave 蛋糕
+join "網管 吳心彤" 1
+"網管 吳心彤": 呃啊啊，妳怎麼來了...呃不是，那個...啊啊啊你先出去一下啦
+join 蛋糕 1 [animation="Bounce In Out"]
+leave "網管 吳心彤"
+leave 蛋糕
+join 吳沛諭 (沒眼看) 1
+吳沛諭: ？？？
+leave 吳沛諭
+join "公關 陳品絜" 1
+"公關 陳品絜": 哈哈哈哈你也太快就來了，等一下啦，不是，啊啊啊你假裝什麼都沒看到
+join 蛋糕 1 [animation="Bounce In Out"]
+leave "公關 陳品絜"
+leave 蛋糕
+join 吳沛諭 (沒眼看) 1
+吳沛諭: 好好笑，那那那...要不我先回教室，再走過來一次？
+leave 吳沛諭
+join "戲教 陳沛倢" 1
+"戲教 陳沛倢": 哈哈哈哈好啦，既然你都看到了，那就...
+leave "戲教 陳沛倢"
+join 蛋糕 1
+祝你生日快樂
+祝你生日快樂
+祝你生日快樂
+祝你生日快樂
+leave 蛋糕 [animation="Bounce In Out" length="1"]
+join "社長 陳韋臻" 1
+"社長 陳韋臻": 耶！！{主控}生日快樂
+leave "社長 陳韋臻"
+join "網管 吳心彤" 1
+"網管 吳心彤": 你怎麼那麼快啦，我們都還沒準備好
+leave "網管 吳心彤"
+join 吳沛諭 (沒眼看) 1
+吳沛諭: 不是啊，我就正常走路速度嘛
+leave 吳沛諭
+join "公關 陳品絜" 1
+"公關 陳品絜": 好好笑，連要幫你準備驚喜都沒辦法，下次走慢一點啦ˋˊ
+leave "公關 陳品絜"
+join 吳沛諭 (normal) 1
+吳沛諭: 哈哈哈哈好啦好啦，耶咿謝謝你們啦，愛死你們了
+leave 吳沛諭
+jump timeline8/

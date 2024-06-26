@@ -1,0 +1,78 @@
+# 高一暑假，問姐姐一堆事
+[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/夢想啟航.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/家.jpg" fade="0.0"]
+join 吳沛諭 (normal) 1
+吳沛諭: 學校新生訓練給了好多東西喔
+吳沛諭: 制服？書包？對喔，還要買這些
+吳沛諭: 合作社網站？哇太酷了吧，合作社也賣太多東西了吧
+吳沛諭: 還有賣Dyson 吸塵器的？？酷
+吳沛諭: 這麼多東西，到底哪些要買哪些不用買啊，去問寶貝豬好了
+leave 吳沛諭
+[background arg="res://素材/back ground/房間.jpg" fade="0.5"]
+join 吳沛諭 1
+吳沛諭: 欸節欸節，學校叫我們買好多東西，全部都要買嗎
+leave 吳沛諭
+label 要買啥
+join 佳佳 (normal) 1
+佳佳: 我看看，他叫你們買什麼啊
+leave 佳佳
+join 吳沛諭 1
+吳沛諭: 就一堆啊，我現在有要買的有...
+leave 吳沛諭
+- 夏季制服
+	jump 夏季制服
+- 冬季制服
+	jump 冬季制服
+- 實驗衣
+	jump 實驗衣
+- 英文雜誌
+	jump 英文雜誌
+- 小綠袋
+	jump 小綠袋
+label 夏季制服
+join 佳佳 (驚恐) 1
+佳佳: 吼不用啦，你笨喔
+佳佳: 你那個去大福買就好了啦
+佳佳: 大福的比較舒服，版型也比學校好看
+佳佳: （啊雖然我都穿學校買的 ㄏ
+leave 佳佳
+bad end...
+- 回上一個選項
+	jump 要買啥
+label 冬季制服
+join 佳佳 (驚恐) 1
+佳佳: 吼不用啦，買這個幹嘛啦
+佳佳: 你之後根本穿不到
+佳佳: 你之後就會有一大堆班服 社服 有的沒的紀念T
+佳佳: 你要是喜歡穿冬季制服我的送你好了
+佳佳: 我買了到現在根本沒穿過
+喔有穿去合唱團比賽：）
+leave 佳佳
+bad end...
+- 回上一個選項
+	jump 要買啥
+label 實驗衣
+join 佳佳 (驚恐) 1
+佳佳: 吼不用啦，我就有了啊
+佳佳: 你也是進實驗室才會用，你要用就跟我借就好了啦
+leave 佳佳
+bad end...
+- 回上一個選項
+	jump 要買啥
+label 英文雜誌
+join 佳佳 (normal) 1
+佳佳: 呵，不愧是上南女的人
+佳佳: 可以啊，就買英文雜誌就好了，其他都不用在學校買
+leave 佳佳
+[background arg="res://素材/back ground/很久以後.jpg" fade="0.0"]
+[wait time="0.5"]
+jump timeline3/
+label 小綠袋
+join 佳佳 (驚恐) 1
+佳佳: 吼不用啦，你之前不也沒拿袋子
+佳佳: 要裝東西用效果什麼的袋子就好了啦
+leave 佳佳
+bad end...
+- 回上一個選項
+	jump 要買啥

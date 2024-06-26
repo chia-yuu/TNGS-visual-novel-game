@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://e230mr5gg6xc"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_1nx8s"]
+[ext_resource type="Texture2D" uid="uid://rccv1ly1eq7a" path="res://素材/封面/結束.png" id="2_kbbgr"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1nx8s")
+
+[node name="結束" type="TextureRect" parent="."]
+offset_left = -3.0
+offset_top = -1.0
+offset_right = 1083.0
+offset_bottom = 2269.0
+texture = ExtResource("2_kbbgr")

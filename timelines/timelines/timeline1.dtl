@@ -1,0 +1,52 @@
+# 會考放榜
+[music path="res://素材/bgm/比天空更遠.mp3" fade="0.0" volume="0.0"]
+# 前導
+[background arg="res://素材/封面/帶耳機.png" fade="0.0"]
+[wait time="5.0"]
+[background arg="res://素材/封面/我時常在想.png" fade="2.0"]
+[wait time="7.0"]
+[background arg="res://素材/封面/如果人生的選擇.png" fade="2.0" transition="Simple Fade"]
+[wait time="7.0"]
+# 那麼命運
+[background arg="res://素材/封面/有後悔的權利.png" fade="2.0" transition="Push Up"]
+[wait time="7.0"]
+[background arg="res://素材/back ground/白色.png" fade="2.0"]
+[wait time="2.0"]
+# 會帶我走向何方
+[background arg="res://素材/封面/命運帶我走向何方(背影).png" fade="2.0"]
+[wait time="10.0"]
+[background arg="res://素材/back ground/聖功.jpg" fade="0.0"]
+join 老師 1
+老師: 第一志願...台南女中？
+老師: 確定不要直升嗎？留在聖功會比你去南女更好喔。聖功可以給你更多資源和協助
+老師: 你們接下來是108課綱，要寫那些自主學習、學習歷程，聖功都可以幫你處理，但你去南女可能就沒有人可以幫你囉。
+老師: 而且你看你的成績這麼好這麼優秀，你留下來還可以得到獎學金，真的不考慮一下嗎？
+leave 老師
+join 吳沛諭 1
+吳沛諭: 謝謝老師，不過這是我經過深思熟慮後的決定，也和家人討論過了，我還是想去南女
+leave 吳沛諭
+join 老師 1
+老師: 好吧，想清楚了就好，那麻煩這邊幫我簽一下確認單喔
+leave 老師
+[background arg="res://素材/back ground/很久以後.jpg" fade="0.0"]
+[wait time="1.0"]
+[background arg="res://素材/back ground/會考放榜.jpg" fade="0.0"]
+今天是會考放榜的日子...
+join 吳沛諭 1
+吳沛諭: 好緊張好緊張，希望可以上南女，拜託拜託拜託...
+leave 吳沛諭
+join 媽媽 1
+媽媽: 欸欸欸時間到了，來來來輸一下帳號密碼
+*打字聲*
+媽媽: 考生{主控}...第一志願...聖功...
+媽媽: 哇，要回去了
+leave 媽媽
+join 吳沛諭 1
+吳沛諭: 什麼啦沒有吧，這裡寫錄取學校台南女中欸
+吳沛諭: 對吧？{主控}...錄取學校...台南女中...
+吳沛諭: 喔喔喔！！！考上南女了！！！喔耶！！！
+leave 吳沛諭
+join 佳佳 (驚恐) 1
+佳佳: 耶耶耶！你要來當我學妹了！
+leave --All--
+jump timeline2/

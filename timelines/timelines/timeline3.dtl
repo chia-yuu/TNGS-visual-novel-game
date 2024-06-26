@@ -1,0 +1,47 @@
+# 高一，認識新朋友，熱食部
+[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
+[music path="res://素材/bgm/喜劇人生.mp3" fade="0.0" volume="0.0"]
+[background arg="res://素材/back ground/南女 高一教室.jpg" fade="0.0"]
+join 江採柔 1
+江採柔: 哈囉哈囉，你叫什麼名字啊？
+leave 江採柔
+join 吳沛諭 (normal) 1
+吳沛諭: 我叫{主控}～等一下要不要一起去買午餐？
+leave 吳沛諭
+join 江採柔 1
+江採柔: 好啊好啊，對了，聽說南女的巧克力卡拉雞很有名，我們等一下去吃好不好
+leave 江採柔
+join 吳沛諭 (normal) 1
+吳沛諭: 嗯嗯，走吧
+leave 吳沛諭
+[background arg="res://素材/back ground/南女 高一.png" fade="0.5"]
+label 追不追
+join 吳沛諭 (吹風) 1
+吳沛諭 (吹風): 嘿你看！那裡有一隻大笨鳥耶
+leave --All--
+- 去追他
+	jump 追大笨鳥
+- 不追他
+	jump 不追
+label 追大笨鳥
+leave --All--
+join 江採柔 1
+江採柔: 好好笑，幹嘛追他啦
+江採柔: 你沒聽說過學校裡的大笨鳥不可以追，不然就會被當嗎
+leave --All--
+join 吳沛諭 1
+吳沛諭: 切，這根本都是傳說好嗎，超無聊的
+leave 吳沛諭
+因為追了大笨鳥，{主控}之後一直被當，一決不振
+bad end...
+- 回上一個選項
+	jump 追不追
+label 不追
+join 吳沛諭 (沒眼看) 1
+吳沛諭: 好可愛喔
+吳沛諭: 沒想到南女也這麼多大笨鳥
+leave --All--
+join 大笨鳥 1
+大笨鳥: @#$%又來一群小高一，看什麼看啦==
+leave 大笨鳥
+jump timeline4/
