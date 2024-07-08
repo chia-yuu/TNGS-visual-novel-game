@@ -135,6 +135,24 @@ join 吳沛諭 1
 吳沛諭: 之後一定會一切順利的！
 leave 吳沛諭
 happy ending
+[background arg="res://素材/封面/做過選擇.jpg" fade="2.0"]
+[wait time="5.0"]
+[background arg="res://素材/封面/感知1.jpg" fade="1.0"]
+[wait time="1.5"]
+[background arg="res://素材/封面/感知2.jpg" fade="0.0"]
+[wait time="1.2"]
+[background arg="res://素材/封面/感知3.jpg" fade="0.0"]
+[wait time="1.2"]
+[background arg="res://素材/封面/感知4.jpg" fade="0.0"]
+[wait time="1.2"]
+[background arg="res://素材/封面/感知5.jpg" fade="0.0"]
+[wait time="1.2"]
+[background arg="res://素材/封面/堅持原本.jpg" fade="2.0"]
+[wait time="5.0"]
+[background arg="res://素材/封面/因為我相信.jpg" fade="2.0"]
+[wait time="5.0"]
+[background arg="res://素材/封面/最好的安排.jpg" fade="2.0" transition="Push Down"]
+[wait time="7.0"]
 靈感、畢業生致詞\: CSunion、林宇柔
 劇本\: 吳佳諭、寶貝貝、親愛的
 程式\: 寶貝子、欸節、吳佳佳
