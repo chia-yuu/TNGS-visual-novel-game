@@ -1,7 +1,7 @@
 # 高三 學測放榜
 [clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
 [music path="res://素材/bgm/夢想啟航.mp3" fade="0.0" volume="0.0"]
-[background arg="res://素材/back ground/南女 高三教室.jpg" fade="0.0"]
+[background fade="0.0"]
 三上就在一堆考試中混亂的結束了
 然後是大家準備已久的學測
 原本沉重的心情，也隨著一科科考試的結束而變得輕鬆
@@ -37,12 +37,11 @@ if {幹啥} == "拍生活照":
 	leave "315 張念謠"
 elif {幹啥} == "看學妹寒訓":
 	join 吳沛諭 1
-	[clear time="1.0" text="false" portraits="false" background="false" positions="false" style="false"]
 	吳沛諭: 好煩喔，還沒想好要穿什麼衣服，一定要漂漂亮亮的><
 	leave 吳沛諭
 	join "315 正與凡爾賽" 1
 	"315 正與凡爾賽": 哇噢好好喔，玩得開心～
-leave "315 正與凡爾賽"
+	leave "315 正與凡爾賽"
 else:
 	join 吳沛諭 1
 	吳沛諭: 之後過年我們家會出去玩
